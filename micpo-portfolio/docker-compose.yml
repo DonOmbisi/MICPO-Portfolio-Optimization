@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+micpo:
+build: .
+container_name: micpo_solver
+volumes:
+- .:/micpo-portfolio
+deploy:
+resources:
+limits:
+cpus: '4.0'
+memory: 8G
